@@ -17,6 +17,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v4
+
       - name: Configure AWS
         uses: aws-actions/configure-aws-credentials@v6
         with:
